@@ -57,9 +57,9 @@
             <div class="col-4">
                <!-- <input type="text" class="form-control" placeholder="United States Dollar" aria-label="readonly input example" readonly> -->
                <select class="form-select" aria-label="Default select example" id="changeCurrency">
-                  <option disabled>Select currency</option>
-                  <option selected value="dollars">United States Dollar</option>
-                  <option value="naira">Naira</option>
+                  <option selected disabled>Select currency</option>
+                  <option value="USD">United States Dollar</option>
+                  <option value="NGN">Naira</option>
                </select>
             </div>
          </div>
@@ -73,7 +73,12 @@
                />
             </div>
             <div class="col-4">
-               <input type="text" class="form-control search" placeholder="USD" id="dollarAmount" />
+               <input
+                  type="text"
+                  class="form-control search"
+                  placeholder="Currency"
+                  id="currencyAmount"
+               />
             </div>
          </div>
       </div>
