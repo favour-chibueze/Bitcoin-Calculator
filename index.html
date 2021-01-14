@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Bitcoin Calculator</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            background: #ffc600;
+            font-family: 'helvetica neue';
+            font-size: 20px;
+            font-weight: 200;
+        }
+  
+  *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .container {
+        margin-top: 140px;
+    }
+
+    .form-control[readonly] {
+        background: white;
+    }
+
+    .form-control[readonly]:focus {
+        outline: none;
+    }
+
+    </style>
+</head>
+<body class="container">
+   <div class="p-5 mt-5 text-center">
+    <div class="">
+        <h1>Bitcoin and Cryptocurrency Calculator</h1>
+    </div>
+    <div class="row g-3 mt-3 d-flex justify-content-center">
+        <div class="col-4">
+          <input type="text" class="form-control" placeholder="Bitcoin" aria-label="readonly" readonly>
+        </div>
+        <div class="col-4">
+          <!-- <input type="text" class="form-control" placeholder="United States Dollar" aria-label="readonly input example" readonly> -->
+          <select class="form-select" aria-label="Default select example" id="changeCurrency">
+            <option disabled>Select currency</option>
+            <option selected value="dollars">United States Dollar</option>
+            <option value="naira">Naira</option>
+          </select>
+        </div>
+   </div>
+   <div class="row g-3 mt-3 d-flex justify-content-center">
+        <div class="col-4">
+        <input type="text" class="form-control search" placeholder="BTC" id="bitconAmount">
+        </div>
+        <div class="col-4">
+        <input type="text" class="form-control search" placeholder="USD" id="dollarAmount">
+        </div>
+    </div>
+   </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
