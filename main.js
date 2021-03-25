@@ -46,3 +46,4 @@ const getRates = fetch('https://min-api.cryptocompare.com/data/pricemulti?fsyms=
    .catch((e) => {
       console.log(e);
    });
+
